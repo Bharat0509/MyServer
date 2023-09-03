@@ -15,8 +15,8 @@ const NoteSchema = new mongoose.Schema(
             required: true,
         },
         subject: {
-            type: String,
-            required: true,
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Subject",
         },
         course_year: {
             type: String,

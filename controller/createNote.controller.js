@@ -9,6 +9,6 @@ export const allNotes = async (req, res) => {
     const notes = await Note.find();
     return res.status(200).json({
         success: true,
-        notes: notes,
+        data: notes,
     });
 };
